@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI Bold', 'Arial Black', sans-serif;
+    font-weight: bold;
+    background-color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    min-height: 100vh; /* Minimum height of the body */
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1; /* Fill the remaining space with content */
+    padding-top: 0; /* Add padding top to prevent navbar from covering content */
+    padding-bottom: 0;
+    text-align: center;
+}
+img {
+    width: 120%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 0px;
+}
+.logo {
+    height: auto;
+    width: 100px; /* Set logo size */
+    margin: auto; /* Center logo on small screens */
+}
+footer {
+    background-color: #2c2c2c;
+    color: #6c757d;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 16px;
+    margin-top: auto; /* Push footer to the bottom */
+}
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 36px;
+    text-align: center;
+    text-decoration: none;
+    margin: 6px 5px;
+    border-radius: 50%;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #00204A;
+}
