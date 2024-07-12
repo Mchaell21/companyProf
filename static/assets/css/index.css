@@ -3,14 +3,14 @@ body {
     font-family: 'Segoe UI Bold', 'Arial Black', sans-serif;
     font-weight: bold;
     background-color: #ffffff;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    min-height: 100vh; /* Minimum height of the body */
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+    min-height: 100vh; /* Tinggi minimum dari body */
     display: flex;
     flex-direction: column;
 }
 .content {
-    flex: 1; /* Fill the remaining space with content */
-    padding-top: 0; /* Add padding top to prevent navbar from covering content */
+    flex: 1; /* Mengisi ruang yang tersisa dengan konten */
+    padding-top: 0; /* Menambahkan padding atas untuk mencegah navbar tertutup konten */
     padding-bottom: 0;
     text-align: center;
 }
@@ -22,8 +22,8 @@ img {
 }
 .logo {
     height: auto;
-    width: 100px; /* Set logo size */
-    margin: auto; /* Center logo on small screens */
+    width: 100px; /* Mengatur ukuran logo */
+    margin: auto; /* Mencentang logo di layar kecil */
 }
 footer {
     background-color: #2c2c2c;
@@ -32,7 +32,7 @@ footer {
     text-align: center;
     padding: 30px 0;
     font-size: 16px;
-    margin-top: auto; /* Push footer to the bottom */
+    margin-top: auto; /* Mendorong footer ke bawah */
 }
 .fa {
     padding: 10px;
@@ -46,7 +46,7 @@ footer {
 
 .nav-link {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 

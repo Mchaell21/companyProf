@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', visitor_views.index, name='index'),
     path('visit/', include('bagianVisitor.urls')),
+    path('logAdmin/', include('logAuth.urls')),
 ]

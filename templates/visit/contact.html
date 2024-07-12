@@ -1,5 +1,39 @@
 {% extends 'visit/index.html'%}
+{% load static %}
 
-{% block main%}
-<h1>contact</h1>
+{% block main %}
+<!-- Form Kontak dan Alamat Perusahaan -->
+<br>
+<div class="container" style="text-align: left; width: 100%; font-family: 'Arial', sans-serif;">
+    <div style="width: 50%; float: left; font-size: 16px;">
+        <h1 style="font-weight: bold;">Hubungi Kami</h1>
+        <p style="font-size: 14px;">
+          Kami siap menjawab pertanyaan Anda.
+          </p>
+        <form method="post" style="display: inline-block; font-size: 14px;">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">Send Inquiry</button>
+        </form>
+    </div>
+    <div style="width: 50%; float: right; font-size: 16px;">
+        <a class="fa-solid fa-location-dot"></a><h1 style="font-weight: bold;"></i>Alamat</h1>
+        <p style="font-size: 14px;">
+            Jl. Tenggilis Mejoyo Blok KK No.1, Kali Rungkut, Kec. Rungkut, Surabaya, Jawa Timur 60293
+          </p>
+        <a href="https://www.google.com/maps/place/Jl.+Tenggilis+Mejoyo+Blok+KK+No.1,+Kali+Rungkut,+Kec.+Rungkut,+Surabaya,+Jawa+Timur+60293/@-7.3156619,112.7613226,17z/data=!3m1!4b1!4m10!1m2!2m1!1sJl.+Tenggilis+Mejoyo+Blok+KK+No.1,+Kali+Rungkut,+Kec.+Rungkut,+Surabaya,+Jawa+Timur+60293,+Indonesia!3m6!1s0x2dd7fafcd42a6f0f:0x2e5f48c049b4c6b0!8m2!3d-7.3156672!4d112.7661882!15sCmRKbC4gVGVuZ2dpbGlzIE1lam95byBCbG9rIEtLIE5vLjEsIEthbGkgUnVuZ2t1dCwgS2VjLiBSdW5na3V0LCBTdXJhYmF5YSwgSmF3YSBUaW11ciA2MDI5MywgSW5kb25lc2lhkgERY29tcG91bmRfYnVpbGRpbmfgAQA!16s%2Fg%2F11bw40ndfl?hl=en&entry=ttu" target="_blank" style="font-size: 14px;">View maps</a>
+        <br>
+        <br>
+        <br>
+        <a class="fa-solid fa-location-dot"></a><h1 style="font-weight: bold;"></i>Our Social Media</h1>
+        <br>
+        
+        <a href="https://wa.me/0881012237888" target="_blank"><img src="{% static 'assets/images/WhatsAppButtonGreenMedium.png' %}" alt="Menza Travel Logo" style="max-width: 250px;"></a>
+        <br>
+        <br>
+        <a href="https://www.instagram.com/menzatravel?igsh=b2l6aXFqc2M5NDhh" target="_blank" style="background-color: #0b4fe1; color: white; padding: 0px 54px; border: none; border-radius: 5px; cursor: pointer; font-size: 20px; display: inline-block; text-decoration: none;"><i class="fa fa-instagram"></i>Instagram</a>
+    </div>
+</div>
+<br>
+
 {% endblock %}

@@ -19,21 +19,16 @@
             <a class="navbar-brand" href="#"><img src="{% static 'assets/images/Menza Travel Logo-01.png' %}" alt="Menza Travel Logo" style="float: left;" class="logo"></a>
             <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-flex justify-content-center">
-                    <a class="nav-link" aria-current="page" href="{% url 'index' %}">HOME</a>
-                    <a class="nav-link" href="{% url 'servicePage' %}">SERVICES</a>
-                    <a class="nav-link" href="{% url 'paymentPage' %}">PAYMENT</a>
-                    <a class="nav-link" href="{% url 'contactPage' %}">CONTACT US</a>
+                    <a class="nav-link" aria-current="page" href="{% url 'homePageAdmin' %}">HOME</a>
+                    <a class="nav-link" href="{% url 'contactListPage' %}">CONTACT LIST</a>
+                    <a class="nav-link" onclick= "return confirm('yakin ingin logout?')" href="{% url 'logout' %}">LOGOUT</a>
                 </div>
             </div>
         </div>
     </nav>
     {% block main %}
-    <div class="content">
-        <img src="{% static 'assets/images/1_20240709_161651_0000.png' %}" alt="Deskripsi Gambar">
-        <img src="{% static 'assets/images/2_20240709_161651_0001.png' %}" alt="Deskripsi Gambar">
-        <img src="{% static 'assets/images/3_20240709_161651_0002.png' %}" alt="Deskripsi Gambar">
-        <img src="{% static 'assets/images/4_20240709_161651_0003.png' %}" alt="Deskripsi Gambar">
-        <img src="{% static 'assets/images/7_20240709_161651_0006.png' %}" alt="Deskripsi Gambar">
+    <div class="text-center">
+        <H1>halaman admin</H1>
     </div>
     {% endblock %}
 
